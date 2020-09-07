@@ -7,7 +7,7 @@
       <p><b>Email:1711456@mail.nankai.edu.cn</b></p>
       <p><b>Tel:17822018001</b></p>
        <p>
-           <a href="./resume.html">Resume in English</a>
+           <a href="./index.html">Resume in English</a>
         </p>
     </td>
     <td width="25%" >
