@@ -1,7 +1,5 @@
 
 
-
-
 <table border="0">
   <tr>
     <td width="75%">
@@ -11,7 +9,7 @@
       <p><b>Email:1711456@mail.nankai.edu.cn</b></p>
       <p><b>Tel:17822018001</b></p>
         <p>
-           <a href="./index_cn.html">Resume in Chinese</a>
+           <a href="./resume_cn.html">Resume in Chinese</a>
         </p>
     </td>
     <td width="25%" >
@@ -100,16 +98,4 @@ Aircraft with Multi-Constraints Based on Soft-Constrained PI2 with Action Smooth
 
 * Director of Academic Department, School of Artificial Intelligence, Nankai University
 * Intern in AI Lab  of Byte Dance 
-
-## BLOG
-
-### RECOMMEND SYSTEM
-
-
-
-### DEEP LEARNING
-
-### REINFORCEMENT LEARNING
-
-1. [readme](./blog/rl/readme.html)
 
