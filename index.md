@@ -6,8 +6,8 @@
       <h1>Jiajun Fan</h1>
       <p><b>Bachelor of Engineering</b></p>
       <p><b>Nankai University Artificial Intelligence College</b></p>
-      <p><b>Email:1711456@mail.nankai.edu.cn</b></p>
-      <p><b>Tel:17822018001</b></p>
+      <p><b>Email:jiajunfanthu@gmail.com</b></p>
+      <p><b>Tel:+86 17822018001</b></p>
         <p>
            <a href="./resume_cn.html">Resume in Chinese</a>
         </p>
@@ -19,6 +19,7 @@
 </table>
 
 
+
 ## **<span style="font-variant:small-caps;">EDUCATION </span>**
 
 ***
@@ -27,22 +28,18 @@
 
 *Bachelor of Engineering, major in Intelligent Science and Technology*                           *Sept. 2017 - Expected 2021*
 
--   **GPA** : 92.58/100 (1/47)
+-   **GPA** : 93.17/100 (1/47)
 -   Relevant Coursework: Automatic Control Principle, Computer Composition Principle, Differential Equation and Complex Function, Probability Theory and Mathematical Statistics, Machine Vision, Data Structure, Reinforcement Learning(cs294), Machine Learning(cs229), Deep Learning (cs230)
--   **Skilled in Python, MATLAB, C/C++, Verilog, Javascript, PyTorch, TensorFlow, LATEX, Web Crawler, Git**
--   **Academic skills : Paper implement, Literature collation, Self-study, Essay writing**
 
 ## **<span style="font-variant:small-caps;">PUBLICATIONS </span>**
 
 ***
 
-[1]**Jiajun Fan**, Tianyi Li, Xian Guo, Mingrui Hao, Mingwei Sun [“A Novel Attitude Controller for Hypersonic
-Aircraft Based on FR-PI2”](./paper/A Novel Attitude Controller for Hypersonic Aircraft Based on FR-PI2.pdf) ICGNC 2020 
+[1]**Fan Jiajun**, Ba He, Guo Xian, Hao Jianye.  Critic PI2:  Master Continuous Planning via Policy Improvement with Path Integrals and Deep Actor-Critic Reinforcement Learning. 2020
 
-[2] **Jiajun Fan**, Tianyi Li, Xian Guo, Mingrui Hao, Mingwei Sun “Learning Optimal Control Law  for Hypersonic Vehicle from Scratch via Model-Based Reinforcement Learning” CAC 2020 under review
+[2] Xiao  Changnan,  Shi  Haosen,  **Fan  Jiajun**,  Deng  Shihong.   CASA-B:  A  Unified  Framework  of Model-Free Reinforcement Learning. 2021.
 
-[3] Tianyi Li\*,  **Jiajun Fan***,  Xian Guo, Mingrui Hao, Mingwei Sun “Self-Tuning Attitude Control Design of Hypersonic
-Aircraft with Multi-Constraints Based on Soft-Constrained PI2 with Action Smooth” CAC 2020 under review
+
 
 ## **<span style="font-variant:small-caps;">Relevant EXPERIENCE </span>**
 

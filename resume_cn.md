@@ -34,13 +34,9 @@
 
 ***
 
-[1]**Jiajun Fan**, Tianyi Li, Xian Guo, Mingrui Hao, Mingwei Sun [“A Novel Attitude Controller for Hypersonic
-Aircraft Based on FR-PI2”](./paper/A Novel Attitude Controller for Hypersonic Aircraft Based on FR-PI2.pdf) ICGNC 2020 
+[1]**Fan Jiajun**, Ba He, Guo Xian, Hao Jianye.  Critic PI2:  Master Continuous Planning via Policy Improvement with Path Integrals and Deep Actor-Critic Reinforcement Learning. 2020
 
-[2] **Jiajun Fan**, Tianyi Li, Xian Guo, Mingrui Hao, Mingwei Sun “Learning Optimal Control Law  for Hypersonic Vehicle from Scratch via Model-Based Reinforcement Learning” CAC 2020 under review
-
-[3] Tianyi Li\*,  **Jiajun Fan***,  Xian Guo, Mingrui Hao, Mingwei Sun “Self-Tuning Attitude Control Design of Hypersonic
-Aircraft with Multi-Constraints Based on Soft-Constrained PI2 with Action Smooth” CAC 2020 under review
+[2] Xiao  Changnan,  Shi  Haosen,  **Fan  Jiajun**,  Deng  Shihong.   CASA-B:  A  Unified  Framework  of Model-Free Reinforcement Learning. 2021.
 
 ## **<span style="font-variant:small-caps;">科研经历 </span>**
 
