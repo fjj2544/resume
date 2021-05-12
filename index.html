@@ -3,7 +3,7 @@
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 
-<link href='https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
@@ -213,254 +213,390 @@ mark .md-meta { color: rgb(0, 0, 0); }
 
 
 :root {
-    --side-bar-bg-color: white;
-    --window-border: none;
-    --search-select-bg-color: #575c61;
-    --active-file-bg-color: #f1f4f5;
-    --item-hover-bg-color: #f1f4f5;
-    --item-hover-text-color: black;
-    --control-text-color: #555;
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
 }
 
-@include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-html {
-    font-size: 12pt;
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
 }
 
 #write {
-    font-family: "STIX2Text", "Times New Roman", "serif";
-    line-height: 1.5em;
-    padding: 10%;
-    padding-top: 5%;
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
 }
 
-.file-list-item-summary {
-    height: 36px;
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
 }
 
-.file-list-item {
-    padding-top: 18px !important;
-    padding-bottom: 18px;
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
 }
 
-#sidebar-loading-template.file-list-item {
-    padding-top: 0 !important;
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
 }
 
-a, a:visited {
-    color: #a00;
+a {
+    color: #4183C4;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
-    line-height: 1.5em;
-    margin-bottom: 1em;
-    margin-top: 1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
 }
-
-h1  {
-    font-size: 2.4em;
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
 }
-
-#write h1  {
-    text-align: center;
+h1 tt,
+h1 code {
+    font-size: inherit;
 }
-
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
 h2 {
-    font-size: 1.8em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
 }
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
+    line-height: 1.43;
 }
-
 h4 {
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
-
-h5  {
-    font-size: 1.1em;
-}
-
-h6 {
+h5 {
     font-size: 1em;
 }
-
-p {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: justify;
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
-pre, code {
-    font-family: 'Latin Modern Mono Light', "Latin Modern Mono", monospace !important;
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
 }
 
-.footnotes {
-    display: list-item;
-    margin-left: 1em;
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
 .md-fences {
-    border: 1px solid;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
-.md-fences.md-fences-with-lineno {
-    border: none;
-}
-
-.CodeMirror-linenumber {
-    color: #333;
-}
-
-*.in-text-selection,
-::selection,
-.CodeMirror-selected {
-    background: var(--search-select-bg-color);
-    color: var(--search-select-text-color) !important;
-    text-shadow: none;
-}
-
-a.md-toc-inner {
-    color: var(--text-color);
-}
-
-.cm-s-typora-default .cm-link {
-    color: #a00;
-    text-decoration: underline;
-}
-
-.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
-    color: black;
-}
-
-#typora-source .CodeMirror-lines {
-    -webkit-font-smoothing: auto;
-    max-width: 1000px;
-}
-
-.md-def-name:before,
-.md-def-name:after {
-    color: #2d2d2d;
-}
-
-sup.md-footnote {
-    background-color: initial;
-    color: inherit;
-}
-
-mark {
-    background: #fff387;
-}
-
-td, th {
-    border: 1px solid;
-    padding-left: 1ch;
-    padding-right: 1ch;
-}
-
-/*table tr[cid]:first-child > td {
-    border-top: 3px double;
-}*/
-
-th {
-    border-bottom: 0;
-    padding-top: 2px;
-    background: #575c61;
-    border-color: #333;
-    color: #f3f3f3;
-}
-
-pre.md-meta-block {
-    border: 1px solid #a2a9b1;
-    background-color: #f8f9fa;
-    padding: 5px;
-    margin-bottom: 1em;
-}
-
-.task-list-item input:before {
-    content: '\221A';
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.6rem;
-    vertical-align: middle;
-    text-align: center;
-    color: #bbb;
-    background-color: inherit;
-}
-
-.task-list-item input:checked:before,
-.task-list-item input[checked]:before{
-    color: inherit;
-}
 
 .md-task-list-item > input {
-    top: auto;
-    margin-left: -1.1em;
-    font-size: 1.3em;
-    margin-top: 0px;
-    -webkit-appearance: none;
+  margin-left: -1.3em;
 }
 
-.md-task-list-item input:before {
-    content: '\2610';
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.6rem;
-    vertical-align: middle;
-    text-align: center;
-    color: #bbb;
-    background-color: inherit;
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
 }
 
-.md-task-list-item input:checked:before,
-.md-task-list-item input[checked]:before{
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
     color: inherit;
-    content: '\2611';
 }
 
-.task-list-item {
-    padding-left: 1.5em;
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
 }
 
-blockquote {
-    font-style: italic;
-    padding: 0.25em 24px;
-    position: relative;
-    color: #383838;
-    border-left: 2px solid;
-    
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
 }
 
-#write > blockquote {
-    padding: 0.25em 30px;
-    margin-left: -32px;
-    width: calc(100% + 32px);
+.sidebar-tabs {
+    border-bottom: none;
 }
 
-#write >  .md-fences-with-lineno {
-    margin-left: -33px;
-    color: black;
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
 }
 
-.CodeMirror-linenumber {
-    min-width: 25px;
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.md-header {
-    font-size: inherit !important;
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-/*blockquote:before {
-    display: block;
-    content: "\201C";
-    font-size: 80px;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    color: #7a7a7a;
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
 }*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
 
 
  .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
@@ -483,6 +619,6 @@ blockquote {
       <img src="index.assets/fjjphoto.jpg" width="100%">
     </td>
   </tr>
-</tbody></table><p>&nbsp;</p><h2 id='education'><strong><span style="font-variant:small-caps;"><span>EDUCATION </span></span></strong></h2><hr /><p><strong><span>Nankai University Artificial Intelligence College</span></strong><span>  </span><span>													</span><span>   </span><strong><span>TianJin,China</span></strong><span> </span></p><p><em><span>Bachelor of Engineering, major in Intelligent Science and Technology</span></em><span>                           </span><em><span>Sept. 2017 - Expected 2021</span></em></p><ul><li><strong><span>GPA</span></strong><span> : 93.17/100 (1/47)</span></li><li><span>Relevant Coursework: Automatic Control Principle, Computer Composition Principle, Differential Equation and Complex Function, Probability Theory and Mathematical Statistics, Machine Vision, Data Structure, Reinforcement Learning(cs294), Machine Learning(cs229), Deep Learning (cs230)</span></li></ul><h2 id='publications'><strong><span style="font-variant:small-caps;"><span>PUBLICATIONS </span></span></strong></h2><hr /><p><span>[1]</span><strong><span>Fan Jiajun</span></strong><span>, Ba He, Guo Xian, Hao Jianye.  Critic PI2:  Master Continuous Planning via Policy Improvement with Path Integrals and Deep Actor-Critic Reinforcement Learning. 2020</span></p><p><span>[2] Xiao  Changnan,  Shi  Haosen,  </span><strong><span>Fan  Jiajun</span></strong><span>,  Deng  Shihong.   CASA-B:  A  Unified  Framework  of Model-Free Reinforcement Learning. 2021.</span></p><p>&nbsp;</p><h2 id='relevant-experience'><strong><span style="font-variant:small-caps;"><span>Relevant EXPERIENCE </span></span></strong></h2><hr /><p><strong><span>Reinforcement Learning Project Team Intern</span></strong></p><p><em><span>Advisor:</span></em><span> </span><strong><a href='http://ai.nankai.edu.cn/info/1035/2825.htm'><span>Xian Guo</span></a><span> </span></strong></p><p><strong><span>Project A: Research on Model-based Reinforcement Learning Algorithm</span></strong><span>       </span><em><span>Apr.2020 – persent</span></em></p><ul><li><span>Propose a new strategy to improve the algorithm learning framework and test the algorithm performance on the </span><a href='http://www.mujoco.org/'><span>MuJoCo</span></a><span> simulation environment                        </span><strong><span>(Python)</span></strong></li><li><span>Project results will be submitted to  </span><strong><span>AAAI 2021</span></strong></li></ul><p><strong><span>Project B: Constrained Path Integral for Hypersonic Aircraft Attitude Control</span></strong><span>       </span><em><span>Mar.2020 – Apr.2020</span></em></p><ul><li><span>Proposed multiple improvements to PI2 and solved a stochastic optimal control model with constraints </span></li><li><span>Research results will be submitted to </span><a href='http://www.caa.org.cn/cac2020/'><strong><span>CAC 2020</span></strong></a></li></ul><p><strong><span>Project C: A Novel Hypersonic Aircraft Attitude Controller Based on Path Integral</span></strong><span>   </span><em><span>Feb. 2020 – Mar.2020</span></em><span> </span></p><ul><li><span>Implemented a rolling optimization algorithm based on MPC control method             </span><strong><span>(Python)</span></strong></li><li><span>Implemented PID system auto-tuning algorithm based on path integral             </span><strong><span>(Python &amp; C++)</span></strong></li><li><span>Research results have been submitted to  </span><a href='http://icgnc.buaa.edu.cn/'><strong><span>ICGNC 2020</span></strong></a></li></ul><p><strong><span>Project D: Gobangs robot based on ModelArts and HiLens</span></strong><span>                </span><em><span>Sept. 2019 - present</span></em></p><ul><li><span>The paper based on AlphaGo realizes Gobang AI, and combined with visual algorithm to realize automatic game AI                                     </span><strong><span>(Python)</span></strong></li><li><span>Related achievements will be showcased at the </span><a href='http://robocup.drct-caa.org.cn/index.php/'><span>2020 Robocup China</span></a><span>             </span></li></ul><p><strong><span>Robot Development Project Team Intern</span></strong><span>      </span></p><p><strong><span>Advisor:</span></strong><a href='https://ai.nankai.edu.cn/info/1032/2779.htm'><strong><span>Feng Duan</span></strong></a><span>, </span><strong><span>Jeffrey Too Chuan TAN</span></strong></p><p><strong><span>Project E : Multifunctional Home Service Robot</span></strong><span>               </span><em><span>Sept. 2018 - Jul. 2019</span></em></p><ul><li><span>Proposed a solution for the entire project and a finite state machine diagram        </span><strong><span>(Visio)</span></strong></li><li><span>Implemented autonomous navigation and RRT path planning related algorithms based on ROS </span><strong><span>(C++ &amp; Python)</span></strong></li><li><span>Project results have been presented in the</span><a href='https://2019.robocup.org/'><span> 2019 ROBOCUP Sydney World Finals</span></a><span> </span></li></ul><h2 id='awards'><strong><span style="font-variant:small-caps;"><span>AWARDS </span></span></strong></h2><hr /><ul><li><span>2018 Nankai University Public Scholarship (top 5%)</span></li><li><span>2018 Nankai ACM School Tournament Bronze</span></li><li><span>2018 National Second Prize of National College Students Mathematical Contest in Modeling (top 1%)</span></li><li><span>2019 third place in the EDU group of the Robocup World Robot Competition</span></li><li><span>2019 Xuzhou ACM / ICPC Bronze Medal</span></li><li><span>2019 National Scholarship (top 1%)</span></li></ul><h2 id='work-experience'><span>WORK EXPERIENCE</span></h2><ul><li><span>Director of Academic Department, School of Artificial Intelligence, Nankai University</span></li><li><span>Intern in AI Lab  of Byte Dance </span></li></ul><p>&nbsp;</p></div></div>
+</tbody></table><p>&nbsp;</p><h2 id='education'><strong><span style="font-variant:small-caps;"><span>EDUCATION </span></span></strong></h2><hr /><p><strong><span>Nankai University Artificial Intelligence College</span></strong><span>  </span><span>													</span><span>   </span><strong><span>TianJin,China</span></strong><span> </span></p><p><em><span>Bachelor of Engineering, major in Intelligent Science and Technology</span></em><span>                           </span><em><span>Sept. 2017 - Expected 2021</span></em></p><ul><li><strong><span>GPA</span></strong><span> : 93.17/100 (1/47)</span></li><li><span>Relevant Coursework: Automatic Control Principle, Computer Composition Principle, Differential Equation and Complex Function, Probability Theory and Mathematical Statistics, Machine Vision, Data Structure, Reinforcement Learning(cs294), Machine Learning(cs229), Deep Learning (cs230)</span></li></ul><h2 id='publications'><strong><span style="font-variant:small-caps;"><span>PUBLICATIONS </span></span></strong></h2><hr /><p><span>[1]</span><strong><span>Fan Jiajun</span></strong><span>, Ba He, Guo Xian, Hao Jianye.  Critic PI2:  Master Continuous Planning via Policy Improvement with Path Integrals and Deep Actor-Critic Reinforcement Learning. 2020</span></p><p><span>[2] Xiao  Changnan,  Shi  Haosen,  </span><strong><span>Fan  Jiajun</span></strong><span>,  Deng  Shihong.   CASA-B:  A  Unified  Framework  of Model-Free Reinforcement Learning. 2021.</span></p><p>&nbsp;</p><h2 id='relevant-experience'><strong><span style="font-variant:small-caps;"><span>Relevant EXPERIENCE </span></span></strong></h2><hr /><p><strong><span>Reinforcement Learning Project Team Intern</span></strong></p><p><em><span>Advisor:</span></em><span> </span><strong><a href='http://ai.nankai.edu.cn/info/1035/2825.htm'><span>Xian Guo</span></a><span> </span></strong></p><p><strong><span>Project A: Research on Model-based Reinforcement Learning Algorithm</span></strong><span>       </span><em><span>Apr.2020 – persent</span></em></p><ul><li><span>Propose a new strategy to improve the algorithm learning framework and test the algorithm performance on the </span><a href='http://www.mujoco.org/'><span>MuJoCo</span></a><span> simulation environment                        </span><strong><span>(Python)</span></strong></li><li><span>Project results will be submitted to  </span><strong><span>AAAI 2021</span></strong></li></ul><p><strong><span>Project B: Gobangs robot based on ModelArts and HiLens</span></strong><span>                </span><em><span>Sept. 2019 - present</span></em></p><ul><li><span>The paper based on AlphaGo realizes Gobang AI, and combined with visual algorithm to realize automatic game AI                                     </span><strong><span>(Python)</span></strong></li><li><span>Related achievements will be showcased at the </span><a href='http://robocup.drct-caa.org.cn/index.php/'><span>2020 Robocup China</span></a><span>             </span></li></ul><p><strong><span>Robot Development Project Team Intern</span></strong><span>      </span></p><p><strong><span>Advisor:</span></strong><a href='https://ai.nankai.edu.cn/info/1032/2779.htm'><strong><span>Feng Duan</span></strong></a><span>, </span><strong><span>Jeffrey Too Chuan TAN</span></strong></p><p><strong><span>Project C : Multifunctional Home Service Robot</span></strong><span>               </span><em><span>Sept. 2018 - Jul. 2019</span></em></p><ul><li><span>Proposed a solution for the entire project and a finite state machine diagram        </span><strong><span>(Visio)</span></strong></li><li><span>Implemented autonomous navigation and RRT path planning related algorithms based on ROS </span><strong><span>(C++ &amp; Python)</span></strong></li><li><span>Project results have been presented in the</span><a href='https://2019.robocup.org/'><span> 2019 ROBOCUP Sydney World Finals</span></a><span> </span></li></ul><h2 id='awards'><strong><span style="font-variant:small-caps;"><span>AWARDS </span></span></strong></h2><hr /><ul><li><span>2018 Nankai University Public Scholarship (top 5%)</span></li><li><span>2018 Nankai ACM School Tournament Bronze</span></li><li><span>2018 National Second Prize of National College Students Mathematical Contest in Modeling (top 1%)</span></li><li><span>2019 third place in the EDU group of the Robocup World Robot Competition</span></li><li><span>2019 Xuzhou ACM / ICPC Bronze Medal</span></li><li><span>2019 National Scholarship (top 1%)</span></li></ul><h2 id='work-experience'><span>WORK EXPERIENCE</span></h2><ul><li><span>Director of Academic Department, School of Artificial Intelligence, Nankai University</span></li><li><span>Intern in AI Lab  of Byte Dance </span></li></ul><p>&nbsp;</p></div></div>
 </body>
 </html>

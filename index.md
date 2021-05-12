@@ -54,18 +54,7 @@
 -   Propose a new strategy to improve the algorithm learning framework and test the algorithm performance on the [MuJoCo](http://www.mujoco.org/) simulation environment                        **(Python)**
 -   Project results will be submitted to  **AAAI 2021**
 
-**Project B: Constrained Path Integral for Hypersonic Aircraft Attitude Control**       *Mar.2020 – Apr.2020*
-
--   Proposed multiple improvements to PI2 and solved a stochastic optimal control model with constraints 
--   Research results will be submitted to [**CAC 2020**](http://www.caa.org.cn/cac2020/)
-
-**Project C: A Novel Hypersonic Aircraft Attitude Controller Based on Path Integral**   *Feb. 2020 – Mar.2020* 
-
--   Implemented a rolling optimization algorithm based on MPC control method             **(Python)**
--   Implemented PID system auto-tuning algorithm based on path integral             **(Python & C++)**
--   Research results have been submitted to  [**ICGNC 2020**](http://icgnc.buaa.edu.cn/)
-
-**Project D: Gobangs robot based on ModelArts and HiLens**                *Sept. 2019 - present*
+**Project B: Gobangs robot based on ModelArts and HiLens**                *Sept. 2019 - present*
 
 * The paper based on AlphaGo realizes Gobang AI, and combined with visual algorithm to realize automatic game AI                                     **(Python)**
 * Related achievements will be showcased at the [2020 Robocup China](http://robocup.drct-caa.org.cn/index.php/)             
@@ -74,7 +63,7 @@
 
 **Advisor:**[**Feng Duan**](https://ai.nankai.edu.cn/info/1032/2779.htm), **Jeffrey Too Chuan TAN**
 
-**Project E : Multifunctional Home Service Robot**               *Sept. 2018 - Jul. 2019*
+**Project C : Multifunctional Home Service Robot**               *Sept. 2018 - Jul. 2019*
 
 -   Proposed a solution for the entire project and a finite state machine diagram        **(Visio)**
 -   Implemented autonomous navigation and RRT path planning related algorithms based on ROS **(C++ & Python)**
