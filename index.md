@@ -83,5 +83,4 @@
 ## WORK EXPERIENCE
 
 * Director of Academic Department, School of Artificial Intelligence, Nankai University
-* Intern in AI Lab  of Byte Dance 
 
